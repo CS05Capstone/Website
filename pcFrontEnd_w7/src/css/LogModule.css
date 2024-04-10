@@ -1,0 +1,155 @@
+.header {
+    padding: 20px 20px 10px 30px; 
+    color: white;
+    text-align: left;
+}
+
+.header h1 {
+    font-weight: bold;
+    color: darkblue;
+    font-size: 40px;
+    margin-top: auto;
+}
+
+.line {
+    border-top: 1px solid darkblue;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.module {
+    width: 90%;
+    margin: 1% auto;
+    overflow: hidden;
+    border-radius: 5px;
+    
+}
+
+.module li{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight:400;
+}
+
+.module li:hover {
+  color: #437cdf;
+}
+
+.module.expanded {
+  height: auto;
+}
+
+.module-header {
+  background-color: #002463;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  
+}
+
+.module-content {
+  padding: 10px;
+  background-color: #fff;
+  font-weight: 300; 
+  max-height: 300px; 
+  overflow-y: auto; 
+}
+
+.module-activity {
+  width: 90%;
+  margin: 1% auto;
+  overflow: hidden;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; 
+}
+
+.module-activity div {
+  margin-bottom: 20px;
+}
+
+.module-activity h2 {
+  color: #002463;
+  padding: 10px;
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 28px;
+}
+
+.module-activity p {
+  color: #002463;
+  padding: 10px;
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+}
+
+.module-activity button {
+  background-color: #002463;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+
+  margin: 0 auto;
+  display: block;
+}
+
+.Module-container{
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.logModule-buttons {
+    text-align: center;
+    display: flex;
+    margin-left: 3%;
+}
+
+.logModule-buttons button {
+    height: 30px;
+    width: 100px;
+    border: 2px solid #002463;
+    font-size: 18px;
+}
+
+.buttonActivity {
+    flex: 1;
+    color: white;
+    background-color: #002463;
+    
+}
+
+.buttonAvatar {
+    flex: 1;
+    margin-left: -1px;
+
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttonAvatar:hover {
+    background-color: rgba(0, 0, 139, 0.1);
+}
+
+.top {
+    margin-top: 1%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding-bottom: 1%;
+}
+
+.logModule-search-container {
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

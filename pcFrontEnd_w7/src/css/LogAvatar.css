@@ -1,0 +1,129 @@
+.Avatar-container{
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+
+.header {
+    padding: 20px 20px 10px 30px; 
+    color: white;
+    text-align: left;
+}
+
+.header h1 {
+    font-weight: bold;
+    color: darkblue;
+    font-size: 40px;
+    margin-top: auto;
+}
+
+.line {
+    border-top: 1px solid darkblue;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.content {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+.left-content {
+    margin-left: 20%;
+}
+
+.right-content {
+    text-align: left;
+    margin-right: 20%;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+.Skill-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.skills {
+    width: 70%;
+    align-items: center;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+.skill-name {
+    width: 120px;
+    font-weight: bold;
+}
+  
+.progress-bar {
+    flex-grow: 1;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin: 0 10px;
+    position: relative;
+}
+  
+.progress {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #007bff;
+}
+  
+.progress-value {
+    width: 40px;
+    text-align: center;
+}
+
+
+.logAvatar-buttons {
+    text-align: center;
+    display: flex;
+    margin-left: 3%;
+}
+
+.logAvatar-buttons button {
+    height: 30px;
+    width: 100px;
+    border: 2px solid #002463;
+    font-size: 18px;
+}
+
+.buttonAvatar {
+    flex: 1;
+    color: white;
+    background-color: #002463;
+    
+}
+
+.buttonActivity {
+    flex: 1;
+    margin-left: -1px;
+
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttonActivity:hover {
+    background-color: rgba(0, 0, 139, 0.1);
+}
+
+.top {
+    margin-top: 1%;
+    display: flex;
+    text-align: center;
+}

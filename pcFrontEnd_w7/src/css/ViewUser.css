@@ -1,0 +1,47 @@
+
+.table-container {
+    margin: 10px;
+    margin-left: 25%;
+    display: flex;
+    text-align: center;
+    
+}
+  
+.accountTable {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.accountTable th, td {
+    border: 1px solid #e0e0e0;
+    padding: 5px;
+    text-align: center;
+}
+
+.accountTable th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.accountTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.accountTable tr:hover {
+    background-color: #e0e0e0;
+}
+
+.deleteButton {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff4c3b;
+}

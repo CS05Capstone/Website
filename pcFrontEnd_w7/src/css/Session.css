@@ -1,0 +1,103 @@
+.header {
+    padding: 20px 20px 10px 30px; 
+    color: white;
+    text-align: left;
+}
+
+.header h1 {
+    font-weight: bold;
+    color: darkblue;
+    font-size: 40px;
+    margin-top: auto;
+}
+
+.line {
+    border-top: 1px solid darkblue;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.buttons {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 2px solid darkblue;
+    color: darkblue;
+    font-size: 18px;
+    background-color: transparent;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+    
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 139, 0.1);
+}
+/* .session-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+  }
+   */
+  /* .session-form-mock {
+    width: 100px;  
+    height: 50px;  
+    background-color: grey;
+  } */
+  
+  .session-info {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+/* Session.css */
+.sessions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .session-box {
+    flex: 1;
+    max-width: 200px;
+    height: 300px; 
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+}
+
+.delete-icon {
+    position: absolute; 
+    top: 10px;          
+    right: 10px;        
+    font-size: 18px;
+    color: red;
+    cursor: pointer;
+    z-index: 1;         
+}
+
+.session-form-mock {
+    background-color: #eee;
+    height: 80%; 
+    margin-bottom: 10px;
+}
+
+
+   .pagination-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+  }
