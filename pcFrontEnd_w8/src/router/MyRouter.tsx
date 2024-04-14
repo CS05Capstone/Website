@@ -13,6 +13,7 @@ export function load(name:string){
 //static route form
 const staticRoutes: RouteObject[] = [
     {path:'/login', element:load('A8Login')},
+    {path:'/register', element:load('Register')},
     {path:'/', element:<A8Main></A8Main>,
     //Nested Routes: A8main nests the following three routes. /user will redirect to A8MainUser
         children:[
