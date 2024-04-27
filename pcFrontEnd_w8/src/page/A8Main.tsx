@@ -32,13 +32,15 @@
 import { Button, Layout, Menu } from 'antd'
 import { observer } from 'mobx-react-lite'
 import { Suspense, useEffect, useState } from 'react'
-import { Navigate, Outlet, Route, useNavigate } from 'react-router-dom'
+import { Link, Navigate, Outlet, Route, useNavigate } from 'react-router-dom'
 import RoutesStore from '../store/RouteStore'
 import '../css/MenuStyle.css';
+import '../css/GameStyle.css';
 import logo from '../resources/logo2.png'
 import logo4 from '../resources/logo4.png'
 import logo3 from '../resources/logo3.png'
 import { SafetyCertificateOutlined, UserOutlined } from '@ant-design/icons'
+import gameIcon from '../resources/11.png';
 
 // import type { MenuProps } from 'antd';
 // import {
@@ -121,7 +123,7 @@ function A8Main() {
 
   return (
     
-      
+    
       <Layout>
         
         <Sider
@@ -136,6 +138,7 @@ function A8Main() {
           {/* <div className={`logo-container ${isExpanded ? 'expanded' : ''}`}>
             <img src={logo} alt="Logo" className="logo" />
           </div> */}
+     
           <div className={`logo-container ${isExpanded ? 'expanded' : ''}`}>
             { collapsed ? (
               <img src={logo} alt="Logo" className="logo" />
@@ -152,25 +155,36 @@ function A8Main() {
                 <div className="user-role">
                 <SafetyCertificateOutlined /> {RoutesStore.currentUserRole}
                 </div>
+               
                 <hr></hr>
+                
               </div>
+              
             )}
+         
           </div>
           <Menu className="custom-menu" items={RoutesStore.menus} theme='dark' mode='inline' style={{}}></Menu>
 
         
         </Sider>
+    
+          
         <Content className='content-container'>
           
-          <Outlet></Outlet>
+    
           <Button size='small'  onClick={onClick} className='logoutButton'>LogOut</Button>
+ 
+        
+          <Outlet />  {/* Placeholder for nested routes */}
         </Content>
         {/* <Layout.Header className={'ant-layout-header'}>
           <span>Welcome User {RoutesStore.username}</span>
           <Button size='small' style={{width:60, left: 900}} onClick={onClick}>LogOut</Button>
         </Layout.Header> */}
+
+       
       </Layout>
-   
+ 
   )
 }
 

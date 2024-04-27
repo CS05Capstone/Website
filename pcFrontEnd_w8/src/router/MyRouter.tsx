@@ -23,6 +23,7 @@ const staticRoutes: RouteObject[] = [
             {path: 'report', element: load('reportComponent')},
             {path: 'skill', element: load('avatar')},
             {path: 'module', element: load('module')},
+            {path: 'game', element: load('UnityGame')},
         ],
     },
     {path:'/session', element:<A8Main></A8Main>,

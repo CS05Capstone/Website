@@ -2,17 +2,18 @@ import React, { useEffect, useState } from 'react';
 import '../css/Module.css';
 import leftArrow from '../resources/left-arrow-white.png';
 import downArrow from '../resources/down-arrow-white.png';
-import { useNavigate } from 'react-router-dom';
+
+
 import RouteStore from '../store/RouteStore';
-
-
+import { Link, Navigate, Outlet, Route, useNavigate } from 'react-router-dom'
+import gameIcon from '../resources/11.png';
 import { Button, Modal, Input, notification, message } from 'antd';
 
 import axios from 'axios';
 import { Activity, Module,ExpandedState } from '../model/Module';
 import Search from 'antd/es/input/Search';
 import { BarsOutlined,DashOutlined } from '@ant-design/icons';
-
+ 
 export default function ModulePage(){ 
   // Handle activity add
   const [showModal, setShowModal] = useState(false);
@@ -177,8 +178,9 @@ export default function ModulePage(){
     };
 
     return (
+      
       <div className='Module-container'>
-        
+
         <div className="header">
           <h1>Modules</h1>
         </div>

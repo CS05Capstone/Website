@@ -5,12 +5,13 @@ import RouteStore from '../store/RouteStore';
 import { load } from '../router/MyRouter';
 import {Route} from '../model/Student';
 import { useLocation } from 'react-router-dom';
-
+import { Link, Navigate, Outlet, } from 'react-router-dom'
+import gameIcon from '../resources/11.png';
 import axios from 'axios';
-import { message } from 'antd';
+import { Button, message } from 'antd';
 
 interface SkillItem {
-    name: string;
+    name: string; 
     progress: number;
   }
   
@@ -82,8 +83,12 @@ export default function AvatarPage(){
     // Static page
     return (
         <div className="Avatar-container">
+           
+        
+            <Outlet />  {/* Placeholder for nested routes */}
             <div className="header">
-            <h1>Avatar</h1>
+            < img src={gameIcon} style={{ position: 'relative',  verticalAlign: 'middle'  ,left: '50px'}}/>
+                <Link to="/game"> <Button id="gameStartButton">Game Start</Button></Link>
             </div>
             <div className="line"></div>
             
