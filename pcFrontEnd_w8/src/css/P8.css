@@ -1,0 +1,15 @@
+
+label{
+    width: 80px;
+    display: inline-block;
+}
+
+div{
+    padding: 10px;
+}
+
+.success{
+    color: green;
+    font-weight: bold;
+    font-size: 12px;
+}

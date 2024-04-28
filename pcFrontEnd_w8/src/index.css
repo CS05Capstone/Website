@@ -1,0 +1,66 @@
+@import '~antd/dist/reset.css';
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#root {
+  width: 100%;
+  height: 100%;
+}
+.ant-layout{
+  height:100%;
+}
+
+/* .ant-layout-header{
+  background-color: rgb(85, 167, 235);
+} */
+
+
+
+
+
+/* .ant-layout-sider{
+  height:100%;
+  color:beige;
+  background-color: cornflowerblue;
+} */
+
+/* index.css */
+
+/*.ant-layout-sider {
+  width: 70px; 
+  transition: width 0.3s ease; 
+  overflow-x: hidden; 
+}
+
+.ant-layout-sider:hover {
+  width: 200px; 
+}
+
+
+.ant-menu-item .ant-menu-item-content span {
+  white-space: nowrap;  
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+.ant-layout-sider:hover .ant-menu-item .ant-menu-item-content span {
+  opacity: 1; 
+}
+*/

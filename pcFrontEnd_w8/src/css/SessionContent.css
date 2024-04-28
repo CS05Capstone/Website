@@ -1,0 +1,118 @@
+.session-content {
+    font-family: 'Arial', sans-serif;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+}
+
+.form_logo {
+    width: 100px;
+    height: 60px;
+    object-fit: cover; /* This ensures the aspect ratio of the image is maintained */
+    margin-left: 20px;
+}
+
+
+.session-id {
+    font-weight: bold;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.blue-line {
+    background-color: deepskyblue;
+    height: 2px;
+    margin: 10px 0;
+}
+
+.form-section {
+    padding: 20px;
+}
+
+.avatar-and-info {
+    display: flex;
+    align-items: center;
+}
+
+/* .avatar-placeholder {
+    width: 150px;  
+    height: 140px;
+    background-color: grey;
+    margin-left: 150px;
+} */
+.avatar-placeholder {
+    width: 150px;
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 150px;
+}
+
+
+.info-section {
+    flex: 1;
+    padding-left: 50px;  
+}
+
+.horizontal-inputs {
+    display: flex;
+    justify-content: start; 
+    gap: 20px;  
+}
+.text-and-input {
+    margin-top: 20px;
+    height: 100px;
+}
+
+.blue-text {
+    color: deepskyblue;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.start-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.form-container {
+    background-color: white;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.section-part {
+    margin-bottom: 40px;  
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* or adjust as needed */
+}
+.input-container Input {
+    width: 80%; 
+}
+
+.input-label {
+    display: inline-block; /* This is necessary to ensure that the width setting takes effect */
+    width: 150px; /* You can adjust this value to accommodate the longest label */
+}
+
+.info-section .ant-input {
+    width: 60%; /* or adjust as needed */
+}
+
+.Session-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1vh; /* Make the container fill the viewport height */
+}
+
+
