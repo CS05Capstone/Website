@@ -18,6 +18,9 @@ public interface UserMapper extends BaseMapper<Users> { //MyBatis Plus will auto
     //insert can automatically match the variables in the User class, but the names must be the same. If an int type value is empty, it will be automatically set to 0
     @Insert("insert into users values(#{id},#{username},#{password})")
     public int insert(Users user);
+
+    @Insert("insert into users values(#{id},#{username},#{password},#{role})")
+    public int insertUser(Users user);
 //    //return type means insert how many
 
     //Retrieve user by ID

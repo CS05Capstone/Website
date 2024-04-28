@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import RouteStore from '../store/RouteStore';
 
-
 import { addedUser, adminValidationErrors } from '../model/Student';
 
 export default function AddUser() {

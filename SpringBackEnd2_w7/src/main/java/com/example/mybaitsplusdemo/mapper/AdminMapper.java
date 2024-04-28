@@ -12,9 +12,18 @@ public interface AdminMapper {
     @Select("SELECT * FROM users WHERE username = #{username}")
     Users findByUsername(String username);
 
+    @Select("SELECT * FROM users WHERE id = #{id}")
+    Users findById(Integer id);
+
+
+
     @Select("SELECT * FROM users")
     List<Users> findAllUsers();
 
     @Delete("DELETE FROM users WHERE id = #{userId}")
     void deleteUser(int userId);
+
+    @Update("UPDATE users SET username = #{user.username} , role = #{user.role},password = #{user.password} WHERE id = #{user.id}")
+    public void updateUser(@Param("user")Users user);
+
 }

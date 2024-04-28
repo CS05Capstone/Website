@@ -14,6 +14,7 @@ public class Users {
     @TableField("password")
     private String password;
 
+
     public void setRole(String role) {
         this.role = role;
     }

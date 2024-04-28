@@ -7,6 +7,25 @@ public class RegisterRequest {
     private String email;
     private String fullName;
     private String phoneNumber;
+    private Integer id;
+
+    public String getRole() {
+        return role;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    private String role;
 
     // default no-argument constructor
     public RegisterRequest() {}

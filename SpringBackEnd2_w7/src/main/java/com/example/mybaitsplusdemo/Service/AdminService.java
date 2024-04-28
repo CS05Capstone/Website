@@ -15,9 +15,16 @@ public class AdminService {
     public void addUser(Users user) {
         adminMapper.add(user);
     }
+    public void updateUser(Users user) {
+        adminMapper.updateUser(user);
+    }
+
 
     public Users findByUsername(String username) {
         return adminMapper.findByUsername(username);
+    }
+    public Users findById(Integer id) {
+        return adminMapper.findById(id);
     }
 
     public List<Users> findAllUsers() {

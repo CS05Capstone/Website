@@ -45,6 +45,7 @@ public class UserService {
         return userMapper.insert(user) > 0;
     }
 
+
     public List<Users> getAllUsersAndTheirOrders() {
         return userMapper.selectAllUserAndOrders();
     }
