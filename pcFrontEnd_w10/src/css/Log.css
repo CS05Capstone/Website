@@ -1,0 +1,163 @@
+.header {
+    padding: 20px 20px 10px 30px; 
+    color: white;
+    text-align: left;
+}
+
+.header h1 {
+    font-weight: bold;
+    color: darkblue;
+    font-size: 40px;
+    margin-top: auto;
+}
+
+.line {
+    border-top: 1px solid darkblue;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.buttons {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 2px solid darkblue;
+    color: darkblue;
+    font-size: 18px;
+    background-color: transparent;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 139, 0.1);
+}
+
+.sessions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 30px 60px 30px 50px;  /* Move the entire session area upwards */
+    overflow-y: auto;
+    height: 70vh;
+    scrollbar-width: thin;
+    scrollbar-color: #888888 transparent;
+    
+    padding-right: 30px;  /* work together with the margin-right above */
+    padding-bottom: 30px; /* Leave space for the bottom */
+}
+
+.sessions::-webkit-scrollbar {
+    width: 6px;          /* Adjust scroll bar width */
+}
+
+.sessions::-webkit-scrollbar-thumb {
+    background-color: #9c9696;
+    border-radius: 4px;
+}
+
+.session-box {
+    width: 100%;
+    background-color: #B0B0B0;   /* add depth to the gray */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.session-box:hover {
+    background-color: #25ab9f;  /* SeaGreen on hover */
+    color: white;
+}
+
+.session-arrow-indicator {
+    align-self: flex-end;
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding-right: 10px;
+    font-weight: bold;   /* bold arrow */
+}
+
+.session-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.session-left-content, .session-right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.session-title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.session-caseworker, .session-date, .session-time, .session-location {
+    color: white;
+    font-size: 18px;
+}
+
+.session-day {
+    font-style: italic;
+    color: #e9ebed;  /* LightSteelBlue */
+    font-size: 18px;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+.session-day, .session-time, .session-date {
+    /* ... (with other styles unchanged) ... */
+    font-weight: bold;   /* bold */
+}
+.session-time, .session-date {
+    font-size: 20px;     /* Increase font size */
+}
+
+.session-right-content {
+    flex-direction: row;    /* Change to horizontal layout */
+    gap: 10px;                 /* Add spacing between elements */
+}
+
+.session-right-content {
+    gap: 10px;
+    justify-content: flex-end;   /* Make the content display on the right */
+}
+
+.session-date {
+    order: 1;    /* Reorder to display the date on the left side*/
+}
+
+.session-day {
+    order: 2;    /* Reorder to display the date on the right side */
+    margin-left: -140px;   /* Move right a little */
+}
+
+.log-search-container {
+    margin-right: 2%;
+    display: flex;
+    align-items: center; /* center the items on the cross axis */
+    gap: 10px;
+}
+
+.top {
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
