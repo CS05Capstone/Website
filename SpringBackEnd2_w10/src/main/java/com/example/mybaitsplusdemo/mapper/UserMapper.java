@@ -46,7 +46,7 @@ public interface UserMapper extends BaseMapper<Users> { //MyBatis Plus will auto
     @Select("SELECT * FROM users WHERE username = #{username}")
     Users findByUsername(String username);
 
-    @Select("INSERT INTO users (username, password) VALUES (#{username}, #{password})")
+    @Select("INSERT INTO users (username, password, role ) VALUES (#{username}, #{password},'user')")
     void save(Users user);
 
     @Select("SELECT path FROM avatar WHERE id = #{id}")

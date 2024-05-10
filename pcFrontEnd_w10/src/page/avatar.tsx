@@ -87,7 +87,7 @@ export default function AvatarPage(){
         
             <Outlet />  {/* Placeholder for nested routes */}
             <div className="header">
-            < img src={gameIcon} style={{ position: 'relative',  verticalAlign: 'middle'  ,left: '50px'}}/>
+            < img src={gameIcon} style={{ position: 'relative' ,left: '20px'}}/>
                 <Link to="/game"> <Button id="gameStartButton">Game Start</Button></Link>
             </div>
             <div className="line"></div>

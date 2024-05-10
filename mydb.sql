@@ -107,18 +107,18 @@ CREATE TABLE `menu`  (
 -- ----------------------------
 -- Records of menu
 -- ----------------------------
-INSERT INTO `menu` VALUES (1, 'student', NULL, 'EditOutlined', '/student', '/student');
-INSERT INTO `menu` VALUES (3, 'user', NULL, 'BgColorsOutlined', '/user', '/user');
-INSERT INTO `menu` VALUES (4, 'session', NULL, 'BorderLeftOutlined', '/session', '/session');
-INSERT INTO `menu` VALUES (5, 'report', NULL, 'BarChartOutlined', '/report', '/report');
-INSERT INTO `menu` VALUES (6, 'module', NULL, 'CodepenOutlined', '/module', '/module');
-INSERT INTO `menu` VALUES (7, 'skill logs', NULL, 'RubyOutlined', '/skill', '/skill');
-INSERT INTO `menu` VALUES (8, 'session', NULL, 'BorderLeftOutlined', '/session', '/session');
-INSERT INTO `menu` VALUES (15, 'report', NULL, NULL, '/report', '/report');
-INSERT INTO `menu` VALUES (16, 'module', NULL, NULL, '/module', '/module');
-INSERT INTO `menu` VALUES (17, 'skill logs', NULL, NULL, '/skill', '/skill');
-INSERT INTO `menu` VALUES (18, 'session', NULL, NULL, '/session', '/session');
-INSERT INTO `menu` VALUES (19, 'menber', NULL, NULL, '/member', '/member');
+INSERT INTO `menu` VALUES (1, 'Student', NULL, 'EditOutlined', '/student', '/student');
+INSERT INTO `menu` VALUES (3, 'User', NULL, 'BgColorsOutlined', '/user', '/user');
+INSERT INTO `menu` VALUES (4, 'Session', NULL, 'BorderLeftOutlined', '/session', '/session');
+INSERT INTO `menu` VALUES (5, 'Report', NULL, 'BarChartOutlined', '/report', '/report');
+INSERT INTO `menu` VALUES (6, 'Module', NULL, 'CodepenOutlined', '/module', '/module');
+INSERT INTO `menu` VALUES (7, 'Skill logs', NULL, 'RubyOutlined', '/skill', '/skill');
+INSERT INTO `menu` VALUES (8, 'Session', NULL, 'BorderLeftOutlined', '/session', '/session');
+INSERT INTO `menu` VALUES (15, 'Report', NULL, NULL, '/report', '/report');
+INSERT INTO `menu` VALUES (16, 'Module', NULL, NULL, '/module', '/module');
+INSERT INTO `menu` VALUES (17, 'Skill logs', NULL, NULL, '/skill', '/skill');
+INSERT INTO `menu` VALUES (18, 'Session', NULL, NULL, '/session', '/session');
+INSERT INTO `menu` VALUES (19, 'Member', NULL, NULL, '/member', '/member');
 INSERT INTO `menu` VALUES (20, 'SysLog', NULL, NULL, '/SysLog', '/SysLog');
 
 -- ----------------------------
@@ -363,3 +363,32 @@ INSERT INTO `users` VALUES (31, '2asd2a2', 'asfaat3', 'user', NULL, '0');
 INSERT INTO `users` VALUES (34, 'ffa', 'ff', 'user', NULL, '0');
 
 SET FOREIGN_KEY_CHECKS = 1;
+
+-- ----------------------------
+-- Table structure for users
+-- ----------------------------
+DROP TABLE IF EXISTS `gameusers`;
+CREATE TABLE `gameusers`  (
+  `user_id` int NOT NULL,
+  `user_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `user_password` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `user_character` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `user_hair` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `user_head` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `user_arms` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `user_body` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `user_legs` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `user_hp` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `user_jud` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `user_ind` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`user_id`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of users
+-- ----------------------------
+INSERT INTO `gameusers` VALUES (1, 'nacy', '111', '1', '1', '1', '1', '1', '1', '8', '3', '6');
+INSERT INTO `gameusers` VALUES (2, 'xiaowugui', '123', '2', NULL, '1', '1', '1', '1', '5', '4', '5');
+
+SET FOREIGN_KEY_CHECKS = 1;
+
