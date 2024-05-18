@@ -1,0 +1,89 @@
+.Avatar-container{
+    max-height: 100vh; /* Use the viewport height unit to make it occupy the entire screen height */
+    overflow-y: auto;
+  }
+
+.header {
+    padding: 20px 20px 10px 30px; 
+    color: white;
+    text-align: left;
+}
+
+.header h1 {
+    font-weight: bold;
+    color: darkblue;
+    font-size: 40px;
+    margin-top: auto;
+}
+
+.line {
+    border-top: 1px solid darkblue;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.content {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    align-items: center; /* horizontally centered alignment */
+    justify-content: space-between; /* bilateral distribution */
+    margin: 20px;
+  }
+  
+.left-content {
+    margin-left: 20%;
+}
+
+.right-content {
+    text-align: left;
+    margin-right: 20%;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+.Skill-container {
+    display: flex;
+    justify-content: center; /* horizontally centered alignment */
+    align-items: center; /* vertically center-aligned */
+    text-align: center;
+}
+.skills {
+    width: 70%;
+    align-items: center;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+.skill-name {
+    width: 120px;
+    font-weight: bold;
+}
+  
+.progress-bar {
+    flex-grow: 1;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin: 0 10px;
+    position: relative;
+}
+  
+.progress {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #007bff;
+}
+  
+.progress-value {
+    width: 40px;
+    text-align: center;
+}

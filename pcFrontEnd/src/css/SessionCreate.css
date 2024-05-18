@@ -1,0 +1,211 @@
+.buttons {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 2px solid darkblue;
+    color: darkblue;
+    font-size: 18px;
+    background-color: transparent;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+    
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 139, 0.1);
+}
+
+.backButton{
+    border-radius: 10px;
+    padding: 5px 20px;
+    border: 1px solid rgb(104, 104, 173);
+    color: rgb(104, 104, 173);
+    font-size: 18px;
+    background-color: transparent;
+    position: absolute;
+    top: -40px;        
+    right: 40px;          
+    z-index: 10;       
+    
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.backButton:hover {
+    background-color: rgba(0, 0, 139, 0.1);
+}
+  
+
+.lineHolder{
+    position: relative;
+}
+
+.session-form .form-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    
+}
+
+.form-item{
+    padding: 10px 0;
+}
+.session-create-page .form-item .ant-select-selector {
+    border: 1px solid darkblue !important;
+}
+.session-form .form-item label {
+    flex-shrink: 0;
+    width: 120px;
+    text-align: right;
+    margin-right: 12px;
+    
+}
+
+.formContent{
+    width: 160vh;
+}
+
+.session-create-page {
+    height: 80vh;         /* you can adjust this based on your design */
+    overflow-y: auto;     /* show scrollbar when content overflows vertically */
+    width: 170vh;
+
+    padding-top: 10px;
+    /* rest of your styles */
+  }
+  
+  /* Customize scrollbar appearance for Webkit browsers (e.g., Chrome, Safari) */
+  .session-create-page::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .session-create-page::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .session-create-page::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  .session-create-page::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .header {
+    padding: 20px 20px 10px 30px; 
+    color: white;
+    text-align: left;
+}
+
+.header h1 {
+    font-weight: bold;
+    color: darkblue;
+    font-size: 40px;
+    margin-top: auto;
+}
+
+.line {
+    border-top: 1px solid darkblue;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.buttons {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 2px solid darkblue;
+    color: darkblue;
+    font-size: 18px;
+    background-color: transparent;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+    
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 139, 0.1);
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+.deep-blue {
+    color: darkblue;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.activities-wrapper {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.activity-item {
+    border: 2px solid transparent;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+    transition: border-color 0.3s;
+    color: #555;
+}
+
+.activity-selected {
+    border-color: rgb(19, 118, 205);
+    color: rgb(19, 118, 205);
+}
+
+.learning-outcomes-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid darkblue; 
+    padding: 10px;
+    min-width: 500px;
+    min-height: 50px;
+    background-color: #ffffff;
+}
+
+.learning-outcome {
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.learning-outcome.selected {
+    border-color: blue; 
+}
+
+/* The following three are for placing 'outcome' into a textarea. */
+/* .textarea-container {
+    border: 1px solid darkblue;
+    width: 300px; 
+}
+
+.custom-textarea {
+    border: none;
+    border-bottom: none;
+    width: 100%;
+}
+
+.learning-outcomes-container {
+    border-top: none;
+} */

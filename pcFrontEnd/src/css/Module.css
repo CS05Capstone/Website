@@ -1,0 +1,279 @@
+.header {
+    padding: 20px 20px 10px 30px; 
+    color: white;
+    text-align: left;
+}
+
+.header h1 {
+    font-weight: bold;
+    color: darkblue;
+    font-size: 40px;
+    margin-top: auto;
+}
+
+.line {
+    border-top: 1px solid darkblue;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.module {
+    width: 90%;
+    margin: 1% auto;
+    overflow: hidden;
+    border-radius: 5px;
+    
+}
+
+.module li{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight:400;
+}
+
+.module li:hover {
+  color: #437cdf;
+}
+
+.module.expanded {
+  height: auto;
+}
+
+.module-header {
+  background-color: #002463;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  
+}
+
+.module-content {
+  padding: 10px;
+  background-color: #fff;
+  font-weight: 300; 
+  max-height: 300px; 
+  overflow-y: auto; 
+}
+
+.module-activity {
+  width: 90%;
+  margin: 1% auto;
+  overflow: hidden;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; 
+}
+
+.module-activity div {
+  margin-bottom: 20px;
+}
+
+.module-activity h2 {
+  color: #002463;
+  padding: 10px;
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 28px;
+}
+
+.module-activity p {
+  color: #002463;
+  padding: 10px;
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+}
+
+.module-activity button {
+  /* background-color: #4065a4;
+  color: #fff; */
+  padding: 10px;
+  cursor: pointer;
+  /* font-weight: bold; */
+  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  /* font-size: 20px;
+  border-radius: 10px; */
+/* 
+  margin: 0 auto;
+  display: block; */
+  right: -50vw;
+}
+
+.Module-container{
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+
+.search-container {
+  margin-left: 80%; 
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.module.highlight {
+  border: 2px solid yellow;
+  position: relative;
+}
+
+.module.highlight::after {
+  content: "!";
+  color: white;
+  background-color: yellow;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+}
+.buttonModule {
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: 2px solid darkblue;
+  color: darkblue;
+  font-size: 18px;
+  background-color: transparent;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  left: 2vw;
+  height: 8vh
+  
+}
+
+.buttonModule:hover {
+  background-color: rgba(0, 0, 139, 0.1);
+}
+/* Move the button to the location circled in red */
+.edit-button {
+  background: none;        /* Removes background */
+  border: none;            /* Removes border */
+  color: inherit;          /* Use parent text color */
+  font: inherit;           /* Use parent font settings */
+  cursor: pointer;         /* Display hand cursor on hover */
+  padding: 0;              /* No padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  right: -20vw;
+  height: 7vh;
+  outline: none;           /* Removes focus outline for better visual */
+  text-decoration: underline; /* Optional: You can underline it to indicate it's clickable */
+}
+
+.edit-button:hover {
+  text-decoration: none;   /* Removes underline on hover, optional and up to your design preference */
+}
+
+.add-button {
+  height: 7vh;
+  right: -6vw;
+  background: none;        /* Removes background */
+  border: none;            /* Removes border */
+  color: inherit;          /* Use parent text color */
+  font: inherit;           /* Use parent font settings */
+  cursor: pointer;         /* Display hand cursor on hover */
+  padding: 0;              /* No padding */
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+
+  outline: none;           /* Removes focus outline for better visual */
+  text-decoration: underline; /* Optional: You can underline it to indicate it's clickable */
+}
+
+
+.outcome-container {
+  display: flex;
+  
+
+}
+
+.outcome-container h2 {
+  margin: 0;
+}
+.confirm-button{
+  height: 7vh;
+  margin-left: -10px;
+}
+.edit-introduction{
+  background: none;        /* Removes background */
+  border: none;            /* Removes border */
+  color: inherit;          /* Use parent text color */
+  font: inherit;           /* Use parent font settings */
+  cursor: pointer;         /* Display hand cursor on hover */
+  padding: 0;              /* No padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  right: -20vw;
+  outline: none;           /* Removes focus outline for better visual */
+  text-decoration: underline; 
+}
+
+.edit-tips{
+  background: none;        /* Removes background */
+  border: none;            /* Removes border */
+  color: inherit;          /* Use parent text color */
+  font: inherit;           /* Use parent font settings */
+  cursor: pointer;         /* Display hand cursor on hover */
+  padding: 0;              /* No padding */
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  margin-left: 10vw;
+  outline: none;           /* Removes focus outline for better visual */
+  text-decoration: underline; 
+
+}
+.add-tip{
+  background: none;        /* Removes background */
+  border: none;            /* Removes border */
+  color: inherit;          /* Use parent text color */
+  font: inherit;           /* Use parent font settings */
+  cursor: pointer;         /* Display hand cursor on hover */
+  padding: 0;              /* No padding */
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+
+  outline: none;           /* Removes focus outline for better visual */
+  text-decoration: underline;  
+}
+.intro-confirm{
+  background: none;        /* Removes background */
+  border: none;            /* Removes border */
+  color: inherit;          /* Use parent text color */
+  font: inherit;           /* Use parent font settings */
+  cursor: pointer;         /* Display hand cursor on hover */
+  padding: 0;              /* No padding */
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  margin-left: 18vw;
+  outline: none;           /* Removes focus outline for better visual */
+  text-decoration: underline;  
+}
+.tip-confirm{
+  background: none;        /* Removes background */
+  border: none;            /* Removes border */
+  color: inherit;          /* Use parent text color */
+  font: inherit;           /* Use parent font settings */
+  cursor: pointer;         /* Display hand cursor on hover */
+  padding: 0;              /* No padding */
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  margin-left: 18vw;
+  outline: none;           /* Removes focus outline for better visual */
+  text-decoration: underline;  
+}

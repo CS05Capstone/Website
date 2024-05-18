@@ -1,0 +1,89 @@
+/* Your provided CSS, unchanged */
+.blue-line {
+    background-color: deepskyblue;
+    height: 2px;
+    margin: 10px 0;
+}
+
+.session-content {
+    font-family: 'Arial', sans-serif;
+
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+}
+
+.form_logo {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.session-id {
+    font-weight: bold;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background-color: white;
+    align-items: center;
+    height: 100vh;
+    overflow-y: auto; 
+    
+}
+
+
+
+/* Additional styles for the rest of the components */
+.module-selection {
+    width: 100%;
+    margin-left: 300px;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+
+
+.activity-list {
+    font-weight: bold;
+    font-size: large;
+    margin-top: 40px;
+    margin-left: 300px;
+    
+}
+
+
+
+/* .activity-list .ant-list-item {
+    border: 2px solid #1890ff;
+    margin: 10px;  
+    padding: 10px;
+    border-radius: 5px;
+    width: 500px;
+    box-sizing: border-box;  
+    
+} */
+
+
+.activities{
+    border: 2px solid #1890ff;
+}
+
+.anticon:hover {
+    color: blue;
+}
+
+
+
+
+
+
+
+
